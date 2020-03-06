@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">gasolinaEtanolSeletor</string>
     <string name="text_gas">"Gas Price: "</string>
-    <string name="percentGasValue">4.00</string>
-    <string name="coinValue">$</string>
+    <string name="percent_gas_value">4.00</string>
+    <string name="coin_value">$</string>
     <string name="text_ethanol">Ethanol Price:</string>
-    <string name="percentEthanolValue">3.00</string>
-    <string name="betterFuelTextInputBox">The better fuel is</string>
+    <string name="percent_ethanol_value">3.00</string>
+    <string name="better_fuel_text_inputBox">In this case use</string>
+    <string name="image_descriptor_gasoline">Gasoline</string>
+    <string name="image_descriptor_ethanol">Ethanol</string>
 </resources>

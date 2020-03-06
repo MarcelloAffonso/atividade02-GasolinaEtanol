@@ -26,7 +26,7 @@
         android:layout_row="2"
         android:layout_column="0"
         android:layout_gravity="center_vertical"
-        android:text="@string/coinValue" />
+        android:text="@string/coin_value" />
 
     <TextView
         android:id="@+id/percentGasTextView"
@@ -35,7 +35,7 @@
         android:layout_row="2"
         android:layout_column="0"
         android:layout_gravity="center"
-        android:text="@string/percentGasValue" />
+        android:text="@string/percent_gas_value" />
 
 
     <SeekBar
@@ -65,7 +65,7 @@
         android:layout_row="4"
         android:layout_column="0"
         android:layout_gravity="center_vertical"
-        android:text="@string/coinValue" />
+        android:text="@string/coin_value" />
 
     <TextView
         android:id="@+id/percentEthanolTextView"
@@ -74,12 +74,12 @@
         android:layout_row="4"
         android:layout_column="0"
         android:layout_gravity="center"
-        android:text="@string/percentEthanolValue" />
+        android:text="@string/percent_ethanol_value" />
 
 
     <SeekBar
         android:id="@+id/percentSeekBar"
-        android:layout_width="wrap_content"
+        android:layout_width="201dp"
         android:layout_height="@dimen/seekbar_height"
         android:layout_row="4"
         android:layout_column="1"
@@ -91,12 +91,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_row="5"
-        android:layout_column="1">
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:gravity="center">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/betterFuelTextInputBox" />
+            android:hint="@string/better_fuel_text_inputBox" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/gasImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:contentDescription="@string/image_descriptor_gasoline"
+        app:srcCompat="@drawable/gas" />
+
+    <ImageView
+        android:id="@+id/EthanolImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:contentDescription="@string/image_descriptor_ethanol"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ethanol" />
 
 </GridLayout>
